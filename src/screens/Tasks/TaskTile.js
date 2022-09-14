@@ -14,11 +14,11 @@ export default function TaskTile({task, onUpdateTask, onDeleteTask}) {
     return(
         <View style={styles.container}>
             <Pressable onPress={onChangeStatus} style={styles.subContainer}>
-                <Image style={styles.check} source={task.isCompleted ? require("../../../assets/icons/check_circle_FILL0_wght400_GRAD0_opsz48.png") : require("../../../assets/icons/circle_FILL0_wght400_GRAD0_opsz48.png")} />
+                <Image style={styles.check} source={task.isCompleted ? require("../../../assets/icons/check_circle.png") : require("../../../assets/icons/circle.png")} />
                 <Text style={styles.title}>{task.title}</Text>
             </Pressable>
             <Pressable onPress={_onDeleteTask}>
-                <Image style={styles.check} source={require("../../../assets/icons/delete_FILL0_wght400_GRAD0_opsz48.png")} />
+                <Image style={styles.check} source={require("../../../assets/icons/delete.png")} />
             </Pressable>
         </View>
     );

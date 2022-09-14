@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     },
     title : {
         fontWeight: "bold",
-        color: "grey",
+        color: "orange",
         fontSize: 16
     }
 });

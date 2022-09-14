@@ -22,7 +22,10 @@ export default function TaskForm() {
     return(
         <View style={styles.container}>
             <TextInput style={styles.input} onChangeText={onChangeText} value={newTitle} placeholder="Nouvelle tâche" />
-            <Button title="Ajouter" onPress={onAddNewTask} color="blue" />
+            <View style={styles.btnAddTasks}>
+                <Button title="Ajouter" onPress={onAddNewTask} color={"orange"}/>
+            </View>
+
         </View>
     );
 }
@@ -37,11 +40,15 @@ const styles = StyleSheet.create({
         borderStyle: "solid",
         borderColor: "grey",
         borderWidth: 1,
-        padding: 10,
+        padding: 8,
         fontSize: 20,
         borderRadius: 10,
         margin: 20,
         color: "grey",
         width: "70%"
+    },
+    btnAddTasks: {
+       position:"absolute",
+       right:10,
     }
 });
