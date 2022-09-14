@@ -1,4 +1,4 @@
-// Selectors : Sélectionner une partie de notre store
+// Selectors : Select a part of our store
 export const getTasks = store => store.tasksList;
 
 // export function getTasks(store) {

@@ -13,7 +13,8 @@ export default function Counter({title, nb}) {
 const styles = StyleSheet.create({
     nb: {
         fontWeight: "bold",
-        fontSize: 20
+        fontSize: 20,
+        color: "purple"
     },
     title : {
         fontWeight: "bold",

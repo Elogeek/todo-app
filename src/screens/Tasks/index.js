@@ -1,13 +1,17 @@
 import React, {useState} from "react";
-import Header from "../../components/Header";
+
+import Header from "../../components/shared/Header";
+import Counter from "../../components/shared/Counter";
+import FloatingBtn from "../../components/shared/FloatingBtn";
+
 import {FlatList, View, StyleSheet} from "react-native";
 import TaskTile from "./TaskTile";
 import TaskForm from "./TaskForm";
-import FloatingBtn from "../../components/FloatingBtn";
-import Counter from "../../components/Counter";
+
 import {useSelector, useDispatch} from "react-redux";
 import {getTasks} from "../../redux/selectors";
 import {toggleTask, deleteTask} from "../../redux/actions";
+
 
 export default function TasksScreen() {
     const [isFormVisible, setIsFormVisible] = useState(false);

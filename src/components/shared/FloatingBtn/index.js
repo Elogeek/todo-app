@@ -2,6 +2,7 @@ import React from "react";
 import {Pressable, StyleSheet, Text} from "react-native";
 
 export default function FloatingBtn({toggle, isOpen}) {
+
     return(
         <Pressable onPress={toggle} style={styles.btn}>
             <Text style={styles.txt}>{isOpen ? "x" : "+"}</Text>

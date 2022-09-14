@@ -1,4 +1,5 @@
-// Reducers :  fonctions retournent un nouveau state
+// Reducers : functions returning a new state according to the action issued by the user
+
 import {ADD_TASK, DELETE_TASK, TOGGLE_TASK} from "../actions/actionsType";
 
 const initialState = [{id: 1, title: "Init task", isCompleted: false}];

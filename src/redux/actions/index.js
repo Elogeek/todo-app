@@ -1,6 +1,6 @@
 import {ADD_TASK, DELETE_TASK, TOGGLE_TASK} from "./actionsType";
 
-// Actions : fonctions qui renvoient un objet - {type: MON_ACTION, payload: {DATA}}
+// Actions : functions that return an object - {type: MON_ACTION, payload: {DATA}}
 
 // ADD_TASK
 export function addTask(title) {

@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     },
     date: {
         fontSize: 26,
-        fontWeight: "bold"
+        fontWeight: "bold",
+        color: "purple"
     }
 });
